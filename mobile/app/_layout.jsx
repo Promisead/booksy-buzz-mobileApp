@@ -36,7 +36,7 @@ export default function RootLayout() {
     else if (isSignedIn && inAuthScreen) router.replace("/(tabs)");
   }, [user, token, segments]);
 
-  return (
+  return ( 
     <SafeAreaProvider>
       <SafeScreen>
         <Stack screenOptions={{ headerShown: false }}>
